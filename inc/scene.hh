@@ -41,6 +41,8 @@ class Scene {
          * \return Referencje do drona o zadanym numerze
          */
 
+        ~Scene();
+
         std::shared_ptr<Drone> UseDrone(int droneNumber);
 
         /*!

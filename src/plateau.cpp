@@ -45,7 +45,7 @@ std::string Plateau::Filename() {
 
 }
 
-Vector3D Plateau::Location() {
+Vector3D Plateau::Location() const {
 
     return GetLocation();
 

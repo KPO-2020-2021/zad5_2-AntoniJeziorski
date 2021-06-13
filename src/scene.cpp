@@ -19,8 +19,17 @@ Scene::Scene() {
     listOfObjects.push_back(DronePtr2);
     numberOfDrones++;
 
-
     numberOfObstacles = 0;
+
+}
+
+Scene::~Scene() {
+
+    for(std::shared_ptr<SceneObject> Obstacle : listOfObstacles) {
+
+        remove(Obstacle->Filename().c_str());
+
+    }
 
 }
 
@@ -58,7 +67,7 @@ void Scene::PrintObstacles() const {
 
     for(std::shared_ptr<SceneObject> Obstacle : listOfObstacles) {
 
-        std::cout << Obstacle->GetNumber() << " - " << Obstacle->GetType() << " (" << Obstacle->Location()[0] << ", " << Obstacle->Location()[1] << std::endl;
+        std::cout << Obstacle->GetNumber() << " - " << Obstacle->GetType() << " (" << Obstacle->Location()[0] << ", " << Obstacle->Location()[1] << ")" << std::endl;
 
     }
 
@@ -89,6 +98,7 @@ void Scene::DeleteObstacle(int number, PzG::LaczeDoGNUPlota &Link) {
     }
 
     Link.UsunNazwePliku((*obstacleIterator)->Filename().c_str());
+    remove((*obstacleIterator)->Filename().c_str());
     listOfObstacles.erase(obstacleIterator);
     listOfObjects.erase(objectIterator);
 

@@ -85,6 +85,8 @@ algorithm
 -
 memory
 -
+vector3D.hh
+../inc/vector3D.hh
 
 ../inc/size.hh
 

@@ -93,7 +93,7 @@ class Cuboid: public Solid {
          * \return Wektor reprezentujacy wspolrzedne srodka prostopadloscianu
          */
 
-        Vector3D GetLocation();
+        Vector3D GetLocation() const;
 
         /*!
          *

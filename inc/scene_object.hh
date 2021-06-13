@@ -6,6 +6,7 @@
 #include <list>
 #include <algorithm>
 #include <memory>
+#include "vector3D.hh"
 
 class SceneObject {
 

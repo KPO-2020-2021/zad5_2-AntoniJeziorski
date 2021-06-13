@@ -73,6 +73,9 @@ CMakeFiles/program.dir/src/scene.cpp.o
  /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/scene.cpp
 CMakeFiles/program.dir/src/scene_object.cpp.o
  ../inc/scene_object.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
  /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/scene_object.cpp
 CMakeFiles/program.dir/src/solid.cpp.o
  ../inc/size.hh

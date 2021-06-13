@@ -61,7 +61,7 @@ void Cuboid::Rotate(double angle) {
 
 }
 
-Vector3D Cuboid::GetLocation() {
+Vector3D Cuboid::GetLocation() const {
     
     return location;
 

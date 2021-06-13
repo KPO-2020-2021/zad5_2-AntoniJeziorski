@@ -72,6 +72,9 @@ CMakeFiles/program.dir/src/scene.cpp.o: ../inc/vector3D.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../src/scene.cpp
 
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/scene_object.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/size.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/scene_object.cpp.o: ../inc/vector3D.hh
 CMakeFiles/program.dir/src/scene_object.cpp.o: ../src/scene_object.cpp
 
 CMakeFiles/program.dir/src/solid.cpp.o: ../inc/size.hh
