@@ -1,5 +1,12 @@
 #include <scene_object.hh>
 
+/*!
+ *
+ * \file scene_object.cpp
+ * 
+ * \brief Plik zawierajacy definicje metod klasy SceneObject
+ */
+
 SceneObject::SceneObject() {
     
 }

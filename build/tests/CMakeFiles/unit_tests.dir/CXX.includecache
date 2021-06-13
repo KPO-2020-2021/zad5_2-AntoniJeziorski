@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+../inc/matrix.hh
+size.hh
+../inc/size.hh
+vector.hh
+../inc/vector.hh
+iostream
+-
+cstdlib
+-
+cmath
+-
+
+../inc/matrix3D.hh
+matrix.hh
+../inc/matrix.hh
+
+../inc/size.hh
+
+../inc/vector.hh
+size.hh
+../inc/size.hh
+iostream
+-
+iomanip
+-
+
+../inc/vector3D.hh
+vector.hh
+../inc/vector.hh
+
 /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/doctest/doctest.h
 signal.h
 -
@@ -90,7 +120,17 @@ sys/time.h
 unistd.h
 -
 
-/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/main.cpp
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/test_matrix3D.cpp
 ../tests/doctest/doctest.h
 /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/doctest/doctest.h
+vector3D.hh
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/vector3D.hh
+matrix3D.hh
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/matrix3D.hh
+
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/test_vector3D.cpp
+../tests/doctest/doctest.h
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/doctest/doctest.h
+vector3D.hh
+/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/tests/vector3D.hh
 

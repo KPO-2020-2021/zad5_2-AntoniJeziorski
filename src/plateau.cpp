@@ -1,5 +1,12 @@
 #include "plateau.hh"
 
+/*!
+ *
+ * \file plateau.cpp
+ * 
+ * \brief Plik zawierajacy definicje metod klasy Plateau
+ */
+
 Plateau::Plateau(Vector3D scale,int number) : SceneObject (number, "Plaskowyz") {
 
     Scale(scale);

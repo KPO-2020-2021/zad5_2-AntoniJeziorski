@@ -52,9 +52,9 @@ set(SOURCES          # All .cpp files in src/
     src/mount.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
-    # tests/main.cpp
-    # tests/test_matrix3D.cpp
-    # tests/test_vector3D.cpp
+    tests/main.cpp
+    tests/test_matrix3D.cpp
+    tests/test_vector3D.cpp
     # tests/test_solid.cpp
     # tests/test_cuboid.cpp
     # tests/test_hexagonal_prism.cpp

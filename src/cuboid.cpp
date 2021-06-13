@@ -1,5 +1,12 @@
 #include "cuboid.hh"
 
+/*!
+ *
+ * \file cuboid.cpp
+ * 
+ * \brief Plik zawierajacy definicje metod klasy Cuboid
+ */
+
 Cuboid::Cuboid() {
 
     double a[3]={-0.5,-0.5,-0.5},b[3] = {0.5,-0.5,-0.5},c[3] = {-0.5, 0.5, -0.5},d[3] = {0.5, 0.5, -0.5},e[3] = {-0.5, 0.5, 0.5},f[3] = {0.5, 0.5, 0.5},g[3] = {-0.5, -0.5, 0.5},h[3] = {0.5, -0.5, 0.5};

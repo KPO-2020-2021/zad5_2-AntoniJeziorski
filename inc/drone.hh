@@ -188,6 +188,13 @@ class Drone : public  SceneObject {
 
         Vector3D Location() const;
 
+        /*!
+         *
+         * \brief Metoda zwracajaca nazwe pliku korpusu
+         * 
+         * \return std::string bedacy nazwa pliku korpusu
+         */
+
         std::string Filename() override final;
 
 };

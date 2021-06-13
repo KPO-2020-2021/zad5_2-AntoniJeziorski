@@ -193,6 +193,60 @@ main.cpp.s:
 	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test_matrix3D.o: test_matrix3D.cpp.o
+
+.PHONY : test_matrix3D.o
+
+# target to build an object file
+test_matrix3D.cpp.o:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3D.cpp.o
+.PHONY : test_matrix3D.cpp.o
+
+test_matrix3D.i: test_matrix3D.cpp.i
+
+.PHONY : test_matrix3D.i
+
+# target to preprocess a source file
+test_matrix3D.cpp.i:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3D.cpp.i
+.PHONY : test_matrix3D.cpp.i
+
+test_matrix3D.s: test_matrix3D.cpp.s
+
+.PHONY : test_matrix3D.s
+
+# target to generate assembly for a file
+test_matrix3D.cpp.s:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3D.cpp.s
+.PHONY : test_matrix3D.cpp.s
+
+test_vector3D.o: test_vector3D.cpp.o
+
+.PHONY : test_vector3D.o
+
+# target to build an object file
+test_vector3D.cpp.o:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o
+.PHONY : test_vector3D.cpp.o
+
+test_vector3D.i: test_vector3D.cpp.i
+
+.PHONY : test_vector3D.i
+
+# target to preprocess a source file
+test_vector3D.cpp.i:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.i
+.PHONY : test_vector3D.cpp.i
+
+test_vector3D.s: test_vector3D.cpp.s
+
+.PHONY : test_vector3D.s
+
+# target to generate assembly for a file
+test_vector3D.cpp.s:
+	cd /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.s
+.PHONY : test_vector3D.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -208,6 +262,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test_matrix3D.o"
+	@echo "... test_matrix3D.i"
+	@echo "... test_matrix3D.s"
+	@echo "... test_vector3D.o"
+	@echo "... test_vector3D.i"
+	@echo "... test_vector3D.s"
 .PHONY : help
 
 

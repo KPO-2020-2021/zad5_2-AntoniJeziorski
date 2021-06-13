@@ -106,16 +106,14 @@ void Scene::DeleteObstacle(int number) {
     std::list<std::shared_ptr<SceneObject>>::iterator obstacleIterator = std::find_if(listOfObstacles.begin(),listOfObstacles.end(), CheckNumber);
     if (obstacleIterator == listOfObstacles.end()) {
 
-      std::cout << "Brak przeszkody o zadanym mumerze" << std::endl;
-      return;
+      throw std::invalid_argument("Zly numer przeszkody!!!");
 
     }
 
     std::list<std::shared_ptr<SceneObject>>::iterator objectIterator = std::find(listOfObjects.begin(),listOfObjects.end(), (*obstacleIterator));
     if (objectIterator == listOfObjects.end()) {
 
-      std::cout << "Zly numer przeszkody!!!" << std::endl;
-      return;
+        throw std::invalid_argument("Zly numer przeszkody!!!");
 
     }
 

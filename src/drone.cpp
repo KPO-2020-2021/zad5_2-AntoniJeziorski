@@ -45,7 +45,6 @@ bool Drone::SaveBody(int droneNumber) {
     FileStream.open(name);
     if (!FileStream.is_open())  {
         throw std::runtime_error("Operacja otwarcia pliku do zapisu nie powiodla sie");
-        return false;
     }
 
     X = (tmp1 + tmp2) / 2;
@@ -87,7 +86,6 @@ bool Drone::SaveRotor(int droneNumber, int rotorNumber, Vector3D& Translation) {
     FileStream.open(name);
     if (!FileStream.is_open())  {
         throw std::runtime_error("Operacja otwarcia pliku do zapisu nie powiodla sie");
-        return false;
     }
 
     X = (tmp1 + tmp2) / 2;

@@ -8,7 +8,7 @@
 /*!
  *
  * \file solid.hh
- * \brief Plik zawierający definicję klasy Solid\
+ * \brief Plik zawierający definicję klasy Solid
  */
 
 /*!
@@ -62,6 +62,13 @@ class Solid {
          */
 
         std::string GetFilename();
+
+        /*!
+         *
+         * \brief Metoda aktualizujaca nazwe pliku bryly
+         * 
+         * \param name - ciag znakow jaki chcemy dodac do podstawowej nazwy pliku
+         */
 
         void ChangeFilename(std::string name);
 

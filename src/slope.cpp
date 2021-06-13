@@ -1,5 +1,12 @@
 #include "slope.hh"
 
+/*!
+ *
+ * \file slope.cpp
+ * 
+ * \brief Plik zawierajacy definicje metod klasy Slope
+ */
+
 Slope::Slope(Vector3D scale,int number) : SceneObject (number, "Zbocze") {
 
     Scale(scale);

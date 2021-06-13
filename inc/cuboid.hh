@@ -90,7 +90,7 @@ class Cuboid: public Solid {
          *
          * \brief Metoda zwracajaca wspolrzedne srodka prostopadloscianu
          * 
-         * \return Wektor reprezentujacy wspolrzedne srodka prostopadloscianu
+         * \return Wektor reprezentujacy wspolrzedne srodka prostopadloscianu jako stala
          */
 
         Vector3D GetLocation() const;

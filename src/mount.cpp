@@ -1,6 +1,13 @@
 #include "mount.hh"
 
-Mount::Mount(Vector3D scale,int number) : SceneObject (number, "Zbocze") {
+/*!
+ *
+ * \file mount.cpp
+ * 
+ * \brief Plik zawierajacy definicje metod klasy Mount
+ */
+
+Mount::Mount(Vector3D scale,int number) : SceneObject (number, "Gora") {
 
     Scale(scale);
 
@@ -23,7 +30,7 @@ void Mount::SaveMount(Vector3D loc) {
 
     ToGlobal(loc);
 
-    Vector3D X, Y, tmp1 = (*this)(0), tmp2 = (*this)(7), tmp3 = (*this)(2), tmp4 = (*this)(5);
+    Vector3D X, Y, tmp1 = (*this)(0), tmp2 = (*this)(7), tmp3 = (*this)(2), tmp4 = (*this)(5), tmp5, tmp6;
 
     std::ofstream  FileStream;
 
@@ -32,11 +39,13 @@ void Mount::SaveMount(Vector3D loc) {
     FileStream.open(GetFilename());
     if (!FileStream.is_open())  {
         throw std::runtime_error("Operacja otwarcia pliku do zapisu nie powiodla sie");
-        return;
     }
 
-    X = (tmp1 + tmp2) / 2;
-    Y = (tmp3 + tmp4) / 2;
+    tmp5 = ((*this)(0) + (*this)(1)) / 2;
+    tmp6 = ((*this)(2) + (*this)(3)) / 2;
+
+    X = (tmp5 + (*this)(6)) / 2;
+    Y = (tmp6 + (*this)(6)) / 2;
 
     FileStream << X << std::endl << (*this)(7) << std::endl << (*this)(5) << std::endl << Y << std::endl << '#' << std::endl << std::endl;
     FileStream << X << std::endl << (*this)(1) << std::endl << (*this)(3) << std::endl << Y << std::endl << '#' << std::endl << std::endl;
