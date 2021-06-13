@@ -25,4 +25,8 @@ class SceneObject {
 
         virtual ~SceneObject();
 
+        virtual std::string Filename() = 0;
+
+        virtual Vector3D Location() const = 0;
+
 };

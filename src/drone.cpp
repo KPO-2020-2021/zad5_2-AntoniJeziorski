@@ -14,6 +14,12 @@ Drone::~Drone() {
 
 }
 
+std::string Drone::Filename() {
+
+    return body.GetFilename();
+
+}
+
 Drone::Drone(Vector3D& bodyScale, Vector3D& rotorScale, Vector3D& loc, int droneNumber) : SceneObject (droneNumber, "dron") {
     
     location = loc;
@@ -275,7 +281,7 @@ HexPrism &Drone::operator [] (int index) {
     return rotor[index];
 }
 
-Vector3D Drone::GetLocation() const {
+Vector3D Drone::Location() const {
 
     return location;
 

@@ -1,6 +1,6 @@
 #include "plateau.hh"
 
-Plateau::Plateau(Vector3D scale,int number) : SceneObject (number, "plateau") {
+Plateau::Plateau(Vector3D scale,int number) : SceneObject (number, "Plaskowyz") {
 
     Scale(scale);
 
@@ -36,5 +36,17 @@ void Plateau::SavePlateau(Vector3D loc) {
     FileStream << X << std::endl << (*this)(7) << std::endl << (*this)(5) << std::endl << Y << std::endl << '#' << std::endl;
 
     FileStream.close();
+
+}
+
+std::string Plateau::Filename() {
+
+    return GetFilename();
+
+}
+
+Vector3D Plateau::Location() {
+
+    return GetLocation();
 
 }

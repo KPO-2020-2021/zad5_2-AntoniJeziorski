@@ -12,4 +12,8 @@ class Plateau : public SceneObject, public Cuboid {
 
         void SavePlateau(Vector3D loc);
 
+        std::string Filename() override final;
+
+        Vector3D Location() const override final;
+
 };

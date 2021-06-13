@@ -186,6 +186,8 @@ class Drone : public  SceneObject {
          * \return Polozenie drona jako const Vector3D
          */
 
-        Vector3D GetLocation() const;
+        Vector3D Location() const;
+
+        std::string Filename() override final;
 
 };

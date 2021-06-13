@@ -30,7 +30,7 @@ class Scene {
 
     public:
 
-        Scene(PzG::LaczeDoGNUPlota *L);
+        Scene();
 
         /*!
          *
@@ -52,7 +52,11 @@ class Scene {
          * \return const Drone o zadanym numerze
          */
 
-        void AddObstacle(int obstacle, Vector3D scale, Vector3D loc);
+        void AddObstacle(int obstacle, Vector3D scale, Vector3D loc, PzG::LaczeDoGNUPlota &Link);
+
+        void DeleteObstacle(int number, PzG::LaczeDoGNUPlota &Link);
+
+        void PrintObstacles() const;
 
 };
 

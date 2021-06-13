@@ -24,16 +24,16 @@
 
 int main() {
 
-    double tab2[3] = {0,0,80},   t[3] = {0,0,-80}, h[3] = {79, 80, 0},  angle, distance, obs[3] = {50,50,50}, l[3] = {50,50,25};
-    Vector3D tr(tab2),  tr2(t), hor(h), o(obs), L(l);
+    double tab2[3] = {0,0,80},   t[3] = {0,0,-80}, h[3] = {79, 80, 0},  angle, distance;
+    Vector3D tr(tab2),  tr2(t), hor(h), obstacleScale, obstacleLocation;
 
-    int droneNumber = 1;
+    int droneNumber = 1, obstacle, obstacleNumber;
 
     char option = '0';
 
     PzG::LaczeDoGNUPlota  Link;  // Ta zmienna jest potrzebna do wizualizacji
                                 // rysunku prostokata
-    Scene scene(&Link);
+    Scene scene;
    //-------------------------------------------------------
    //  Wspolrzedne wierzcholkow beda zapisywane w pliku "prostokat.dat"
    //  Ponizsze metody powoduja, ze dane z pliku beda wizualizowane
@@ -109,13 +109,15 @@ int main() {
         std::cout << "Aktualna ilosc obiektow typu wektor3D: " << Vector3D::getActualVectorAmount() << std::endl;
         std::cout << "Laczna ilosc obiektow typu wektor3D: " << Vector3D::getAllVectorAmount() << std::endl;
 
-        std::cout << "Nr aktywnego drona: " << droneNumber << " (" << scene.UseDrone(droneNumber-1)->GetLocation()[0] << ", " << scene.UseDrone(droneNumber-1)->GetLocation()[1] <<")" << std::endl;  
+        std::cout << "Nr aktywnego drona: " << droneNumber << " (" << scene.UseDrone(droneNumber-1)->Location()[0] << ", " << scene.UseDrone(droneNumber-1)->Location()[1] <<")" << std::endl;  
 
         if(option == '0') { 
         
             std::cout << "a - wybierz aktywnego drona" << std::endl;
             std::cout << "p - zadaj parametry przelotu" << std::endl;
             std::cout << "z - wykonaj zwiad" << std::endl;
+            std::cout << "d - dodaj element powierzchni" << std::endl;
+            std::cout << "u - usun element powierzhcni" << std::endl;
             std::cout << "m - wyswietl menu" << std::endl;
             std::cout << std::endl;
             std::cout << "k - koniec dzialania programu" << std::endl;
@@ -162,8 +164,8 @@ int main() {
                 break;
             case 'a':
 
-                std::cout << "1: " << droneNumber << " (" << scene.UseDrone(0)->GetLocation()[0] << ", " << scene.UseDrone(0)->GetLocation()[1] <<")" << std::endl;
-                std::cout << "2: " << droneNumber << " (" << scene.UseDrone(1)->GetLocation()[0] << ", " << scene.UseDrone(1)->GetLocation()[1] <<")" << std::endl;
+                std::cout << "1: " << droneNumber << " (" << scene.UseDrone(0)->Location()[0] << ", " << scene.UseDrone(0)->Location()[1] <<")" << std::endl;
+                std::cout << "2: " << droneNumber << " (" << scene.UseDrone(1)->Location()[0] << ", " << scene.UseDrone(1)->Location()[1] <<")" << std::endl;
                 std::cout << "Podaj numer drona" << std::endl;
                 std::cin >> droneNumber;
 
@@ -179,13 +181,38 @@ int main() {
 
             case 'd':
 
-                scene.AddObstacle(1, o, L);
+                std::cout << "Podaj wspolrzedne rodzaj przeszkody:" << std::endl;
+                std::cout << "1 - Plaskowyz" << std::endl;
+                std::cout << "2 - Zbocze" << std::endl;
+                std::cout << "3 - Gora" << std::endl;
+                std::cin >> obstacle;
+                std::cout << "Podaj skale w osiach X Y Z" << std::endl;
+                std::cin >> obstacleScale;
+                if(obstacleScale[2] > 79) {
+                    std::cout << "Dron nie lata tak wysoko!!!" << std::endl;
+                    break;
+                }
+                std::cout << "Podaj wspolrzedne srodka przeszkody X Y: " << std::endl;
+                std::cin >> obstacleLocation[0] >> obstacleLocation[1];
+                scene.AddObstacle(obstacle, obstacleScale, obstacleLocation, Link);
+                Link.Rysuj();
+                break;
+
+            case 'u':
+
+                scene.PrintObstacles();
+                std::cout << "Podaj numer przeszkody" << std::endl;
+                std::cin >> obstacleNumber;
+                scene.DeleteObstacle(obstacleNumber, Link);
                 Link.Rysuj();
                 break;
 
             default:
+
                 option = '0';
-                std::cerr << "!!! NIEPOPRAWNA OPCJA !!!" << std::endl; break;
+                std::cerr << "!!! NIEPOPRAWNA OPCJA !!!" << std::endl; 
+                break;
+
         }
 
     }
