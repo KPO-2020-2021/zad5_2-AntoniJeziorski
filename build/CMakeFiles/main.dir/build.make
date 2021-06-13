@@ -85,7 +85,9 @@ main_EXTERNAL_OBJECTS = \
 "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/scene.cpp.o" \
 "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/hexagonal_prism.cpp.o" \
 "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/scene_object.cpp.o" \
-"/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/plateau.cpp.o"
+"/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/plateau.cpp.o" \
+"/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/slope.cpp.o" \
+"/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/mount.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
 main: CMakeFiles/program.dir/src/example.cpp.o
@@ -98,6 +100,8 @@ main: CMakeFiles/program.dir/src/scene.cpp.o
 main: CMakeFiles/program.dir/src/hexagonal_prism.cpp.o
 main: CMakeFiles/program.dir/src/scene_object.cpp.o
 main: CMakeFiles/program.dir/src/plateau.cpp.o
+main: CMakeFiles/program.dir/src/slope.cpp.o
+main: CMakeFiles/program.dir/src/mount.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

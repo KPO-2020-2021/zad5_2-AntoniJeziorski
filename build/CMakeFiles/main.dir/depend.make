@@ -9,10 +9,12 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/hexagonal_prism.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/matrix.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/matrix3D.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/mount.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/plateau.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/scene.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/scene_object.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/size.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/slope.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/solid.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/vector.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/vector3D.hh

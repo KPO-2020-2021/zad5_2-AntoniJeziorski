@@ -33,7 +33,7 @@ int main() {
 
     PzG::LaczeDoGNUPlota  Link;  // Ta zmienna jest potrzebna do wizualizacji
                                 // rysunku prostokata
-    Scene scene;
+    Scene scene(&Link);
    //-------------------------------------------------------
    //  Wspolrzedne wierzcholkow beda zapisywane w pliku "prostokat.dat"
    //  Ponizsze metody powoduja, ze dane z pliku beda wizualizowane
@@ -86,7 +86,7 @@ int main() {
     bedInfo->ZmienSzerokosc(1);
     
     
-
+    
    //
    //  Ustawienie trybu rysowania 2D, tzn. rysowany zbiór punktów
    //  znajduje się na wspólnej płaszczyźnie. Z tego powodu powoduj
@@ -101,6 +101,17 @@ int main() {
 
     scene.UseDrone(0)->SaveDrone(1);
     scene.UseDrone(1)->SaveDrone(2);
+
+    double p1Scale[3] = {20,30,20}, p1Loc[3] = {150,50,0}, p2Scale[3] = {30,40,10}, p2Loc[3] = {100,100,0}, m1Scale[3] = {60,60,70}, m1Loc[3] = {150,150,0};
+    double m2Scale[3] = {20,20,50}, m2Loc[3] = {190,190,0}, s1Scale[3] = {20,50,40}, s1Loc[3] = {25,140,0};
+
+    Vector3D P1Scale(p1Scale), P1Loc(p1Loc), P2Scale(p2Scale), P2Loc(p2Loc), M1Scale(m1Scale), M1Loc(m1Loc), M2Loc(m2Loc), M2Scale(m2Scale), S1Scale(s1Scale), S1Loc(s1Loc);
+
+    scene.AddObstacle(1,P1Scale, P1Loc);
+    scene.AddObstacle(1,P2Scale, P2Loc);
+    scene.AddObstacle(3,M1Scale, M1Loc);
+    scene.AddObstacle(3,M2Scale, M2Loc);
+    scene.AddObstacle(2,S1Scale, S1Loc);
     
     Link.Rysuj(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 
@@ -194,7 +205,7 @@ int main() {
                 }
                 std::cout << "Podaj wspolrzedne srodka przeszkody X Y: " << std::endl;
                 std::cin >> obstacleLocation[0] >> obstacleLocation[1];
-                scene.AddObstacle(obstacle, obstacleScale, obstacleLocation, Link);
+                scene.AddObstacle(obstacle, obstacleScale, obstacleLocation);
                 Link.Rysuj();
                 break;
 
@@ -203,7 +214,7 @@ int main() {
                 scene.PrintObstacles();
                 std::cout << "Podaj numer przeszkody" << std::endl;
                 std::cin >> obstacleNumber;
-                scene.DeleteObstacle(obstacleNumber, Link);
+                scene.DeleteObstacle(obstacleNumber);
                 Link.Rysuj();
                 break;
 

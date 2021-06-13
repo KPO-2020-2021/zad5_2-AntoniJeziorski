@@ -56,6 +56,14 @@ cmath
 matrix.hh
 ../inc/matrix.hh
 
+../inc/mount.hh
+fstream
+-
+cuboid.hh
+../inc/cuboid.hh
+scene_object.hh
+../inc/scene_object.hh
+
 ../inc/plateau.hh
 fstream
 -
@@ -69,6 +77,10 @@ drone.hh
 ../inc/drone.hh
 plateau.hh
 ../inc/plateau.hh
+slope.hh
+../inc/slope.hh
+mount.hh
+../inc/mount.hh
 scene_object.hh
 ../inc/scene_object.hh
 
@@ -89,6 +101,14 @@ vector3D.hh
 ../inc/vector3D.hh
 
 ../inc/size.hh
+
+../inc/slope.hh
+fstream
+-
+scene_object.hh
+../inc/scene_object.hh
+cuboid.hh
+../inc/cuboid.hh
 
 ../inc/solid.hh
 vector3D.hh

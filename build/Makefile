@@ -752,6 +752,33 @@ src/matrix3D.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/matrix3D.cpp.s
 .PHONY : src/matrix3D.cpp.s
 
+src/mount.o: src/mount.cpp.o
+
+.PHONY : src/mount.o
+
+# target to build an object file
+src/mount.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/mount.cpp.o
+.PHONY : src/mount.cpp.o
+
+src/mount.i: src/mount.cpp.i
+
+.PHONY : src/mount.i
+
+# target to preprocess a source file
+src/mount.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/mount.cpp.i
+.PHONY : src/mount.cpp.i
+
+src/mount.s: src/mount.cpp.s
+
+.PHONY : src/mount.s
+
+# target to generate assembly for a file
+src/mount.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/mount.cpp.s
+.PHONY : src/mount.cpp.s
+
 src/plateau.o: src/plateau.cpp.o
 
 .PHONY : src/plateau.o
@@ -832,6 +859,33 @@ src/scene_object.s: src/scene_object.cpp.s
 src/scene_object.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scene_object.cpp.s
 .PHONY : src/scene_object.cpp.s
+
+src/slope.o: src/slope.cpp.o
+
+.PHONY : src/slope.o
+
+# target to build an object file
+src/slope.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/slope.cpp.o
+.PHONY : src/slope.cpp.o
+
+src/slope.i: src/slope.cpp.i
+
+.PHONY : src/slope.i
+
+# target to preprocess a source file
+src/slope.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/slope.cpp.i
+.PHONY : src/slope.cpp.i
+
+src/slope.s: src/slope.cpp.s
+
+.PHONY : src/slope.s
+
+# target to generate assembly for a file
+src/slope.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/slope.cpp.s
+.PHONY : src/slope.cpp.s
 
 src/solid.o: src/solid.cpp.o
 
@@ -924,6 +978,9 @@ help:
 	@echo "... src/matrix3D.o"
 	@echo "... src/matrix3D.i"
 	@echo "... src/matrix3D.s"
+	@echo "... src/mount.o"
+	@echo "... src/mount.i"
+	@echo "... src/mount.s"
 	@echo "... src/plateau.o"
 	@echo "... src/plateau.i"
 	@echo "... src/plateau.s"
@@ -933,6 +990,9 @@ help:
 	@echo "... src/scene_object.o"
 	@echo "... src/scene_object.i"
 	@echo "... src/scene_object.s"
+	@echo "... src/slope.o"
+	@echo "... src/slope.i"
+	@echo "... src/slope.s"
 	@echo "... src/solid.o"
 	@echo "... src/solid.i"
 	@echo "... src/solid.s"

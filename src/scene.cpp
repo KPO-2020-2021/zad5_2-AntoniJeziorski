@@ -6,7 +6,7 @@
  * \brief Plik zawierajacy definicje metod klasy Scene
  */
 
-Scene::Scene() {
+Scene::Scene(PzG::LaczeDoGNUPlota *L) {
 
     double tab[3] = {10,8,6}, l1[3] = {20,20,3}, l2[3] = {50,20,3}, r[3] = {7,7,2};
     Vector3D v(tab), loc1(l1), loc2(l2), rot(r);
@@ -20,6 +20,8 @@ Scene::Scene() {
     numberOfDrones++;
 
     numberOfObstacles = 0;
+
+    Link = L;
 
 }
 
@@ -47,7 +49,7 @@ std::shared_ptr<Drone> Scene::UseDrone(int droneNumber) {
 
 }
 
-void Scene::AddObstacle(int obstacle, Vector3D scale, Vector3D loc, PzG::LaczeDoGNUPlota &Link) {
+void Scene::AddObstacle(int obstacle, Vector3D scale, Vector3D loc) {
 
     loc[2] = scale[2]/2;
 
@@ -57,7 +59,27 @@ void Scene::AddObstacle(int obstacle, Vector3D scale, Vector3D loc, PzG::LaczeDo
         listOfObstacles.push_back(ObstaclePtr);
         listOfObjects.push_back(ObstaclePtr); 
         ObstaclePtr->SavePlateau(loc);
-        Link.DodajNazwePliku((ObstaclePtr->GetFilename()).c_str());
+        (*Link).DodajNazwePliku((ObstaclePtr->GetFilename()).c_str());
+       
+    }
+
+    if(obstacle == 2) {
+
+        std::shared_ptr<Slope> ObstaclePtr = std::make_shared<Slope>(scale, numberOfObstacles++);
+        listOfObstacles.push_back(ObstaclePtr);
+        listOfObjects.push_back(ObstaclePtr); 
+        ObstaclePtr->SaveSlope(loc);
+        (*Link).DodajNazwePliku((ObstaclePtr->GetFilename()).c_str());
+       
+    }
+
+    if(obstacle == 3) {
+
+        std::shared_ptr<Mount> ObstaclePtr = std::make_shared<Mount>(scale, numberOfObstacles++);
+        listOfObstacles.push_back(ObstaclePtr);
+        listOfObjects.push_back(ObstaclePtr); 
+        ObstaclePtr->SaveMount(loc);
+        (*Link).DodajNazwePliku((ObstaclePtr->GetFilename()).c_str());
        
     }
 
@@ -73,7 +95,7 @@ void Scene::PrintObstacles() const {
 
 }
 
-void Scene::DeleteObstacle(int number, PzG::LaczeDoGNUPlota &Link) {
+void Scene::DeleteObstacle(int number) {
 
     auto CheckNumber = [number](std::shared_ptr<SceneObject> obstaclePtr) -> bool {
 
@@ -97,7 +119,7 @@ void Scene::DeleteObstacle(int number, PzG::LaczeDoGNUPlota &Link) {
 
     }
 
-    Link.UsunNazwePliku((*obstacleIterator)->Filename().c_str());
+    (*Link).UsunNazwePliku((*obstacleIterator)->Filename().c_str());
     remove((*obstacleIterator)->Filename().c_str());
     listOfObstacles.erase(obstacleIterator);
     listOfObjects.erase(objectIterator);

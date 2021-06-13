@@ -10,10 +10,12 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/lacze_do_gnuplota.hh
  ../inc/matrix.hh
  ../inc/matrix3D.hh
+ ../inc/mount.hh
  ../inc/plateau.hh
  ../inc/scene.hh
  ../inc/scene_object.hh
  ../inc/size.hh
+ ../inc/slope.hh
  ../inc/solid.hh
  ../inc/vector.hh
  ../inc/vector3D.hh
