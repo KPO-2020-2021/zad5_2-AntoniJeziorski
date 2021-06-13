@@ -31,3 +31,9 @@ std::string Solid::GetFilename() {
     return filename;
 
 }
+
+void Solid::ChangeFilename(std::string name) {
+
+    filename += name;
+
+}

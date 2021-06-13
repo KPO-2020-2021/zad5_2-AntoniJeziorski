@@ -45,12 +45,24 @@ CMakeFiles/program.dir/src/matrix3D.cpp.o: ../inc/size.hh
 CMakeFiles/program.dir/src/matrix3D.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/matrix3D.cpp.o: ../src/matrix3D.cpp
 
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/cuboid.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/matrix.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/matrix3D.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/plateau.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/scene_object.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/size.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/solid.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/vector.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../inc/vector3D.hh
+CMakeFiles/program.dir/src/plateau.cpp.o: ../src/plateau.cpp
+
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/cuboid.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/drone.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/hexagonal_prism.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/matrix.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/matrix3D.hh
+CMakeFiles/program.dir/src/scene.cpp.o: ../inc/plateau.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/scene.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/scene_object.hh
 CMakeFiles/program.dir/src/scene.cpp.o: ../inc/size.hh

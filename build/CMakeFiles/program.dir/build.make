@@ -174,6 +174,19 @@ CMakeFiles/program.dir/src/scene_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/scene_object.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/scene_object.cpp -o CMakeFiles/program.dir/src/scene_object.cpp.s
 
+CMakeFiles/program.dir/src/plateau.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/plateau.cpp.o: ../src/plateau.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/program.dir/src/plateau.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/plateau.cpp.o -c /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/plateau.cpp
+
+CMakeFiles/program.dir/src/plateau.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/plateau.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/plateau.cpp > CMakeFiles/program.dir/src/plateau.cpp.i
+
+CMakeFiles/program.dir/src/plateau.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/plateau.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/plateau.cpp -o CMakeFiles/program.dir/src/plateau.cpp.s
+
 program: CMakeFiles/program.dir/src/example.cpp.o
 program: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 program: CMakeFiles/program.dir/src/cuboid.cpp.o
@@ -183,6 +196,7 @@ program: CMakeFiles/program.dir/src/solid.cpp.o
 program: CMakeFiles/program.dir/src/scene.cpp.o
 program: CMakeFiles/program.dir/src/hexagonal_prism.cpp.o
 program: CMakeFiles/program.dir/src/scene_object.cpp.o
+program: CMakeFiles/program.dir/src/plateau.cpp.o
 program: CMakeFiles/program.dir/build.make
 
 .PHONY : program

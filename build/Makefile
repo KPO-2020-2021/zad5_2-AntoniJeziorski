@@ -752,6 +752,33 @@ src/matrix3D.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/matrix3D.cpp.s
 .PHONY : src/matrix3D.cpp.s
 
+src/plateau.o: src/plateau.cpp.o
+
+.PHONY : src/plateau.o
+
+# target to build an object file
+src/plateau.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/plateau.cpp.o
+.PHONY : src/plateau.cpp.o
+
+src/plateau.i: src/plateau.cpp.i
+
+.PHONY : src/plateau.i
+
+# target to preprocess a source file
+src/plateau.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/plateau.cpp.i
+.PHONY : src/plateau.cpp.i
+
+src/plateau.s: src/plateau.cpp.s
+
+.PHONY : src/plateau.s
+
+# target to generate assembly for a file
+src/plateau.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/plateau.cpp.s
+.PHONY : src/plateau.cpp.s
+
 src/scene.o: src/scene.cpp.o
 
 .PHONY : src/scene.o
@@ -897,6 +924,9 @@ help:
 	@echo "... src/matrix3D.o"
 	@echo "... src/matrix3D.i"
 	@echo "... src/matrix3D.s"
+	@echo "... src/plateau.o"
+	@echo "... src/plateau.i"
+	@echo "... src/plateau.s"
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"

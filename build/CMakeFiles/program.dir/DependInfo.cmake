@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/hexagonal_prism.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/hexagonal_prism.cpp.o"
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/lacze_do_gnuplota.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/matrix3D.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/matrix3D.cpp.o"
+  "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/plateau.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/plateau.cpp.o"
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/scene.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/scene.cpp.o"
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/scene_object.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/scene_object.cpp.o"
   "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/src/solid.cpp" "/home/antek/Documents/PO/zad5/zad5_2-AntoniJeziorski/build/CMakeFiles/program.dir/src/solid.cpp.o"

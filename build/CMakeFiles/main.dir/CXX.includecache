@@ -62,9 +62,19 @@ cmath
 matrix.hh
 ../inc/matrix.hh
 
+../inc/plateau.hh
+fstream
+-
+scene_object.hh
+../inc/scene_object.hh
+cuboid.hh
+../inc/cuboid.hh
+
 ../inc/scene.hh
 drone.hh
 ../inc/drone.hh
+plateau.hh
+../inc/plateau.hh
 scene_object.hh
 ../inc/scene_object.hh
 

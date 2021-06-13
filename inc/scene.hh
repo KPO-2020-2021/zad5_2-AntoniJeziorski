@@ -1,4 +1,5 @@
 #include "drone.hh"
+#include "plateau.hh"
 #include "scene_object.hh"
 
 /*!
@@ -19,13 +20,17 @@ class Scene {
 
     std::list<std::shared_ptr<SceneObject>> listOfObjects;
 
+    std::list<std::shared_ptr<SceneObject>> listOfObstacles;
+
     PzG::LaczeDoGNUPlota Link;
 
-    int droneNumber;
+    int numberOfDrones;
+
+    int numberOfObstacles;
 
     public:
 
-        Scene();
+        Scene(PzG::LaczeDoGNUPlota *L);
 
         /*!
          *
@@ -47,6 +52,7 @@ class Scene {
          * \return const Drone o zadanym numerze
          */
 
+        void AddObstacle(int obstacle, Vector3D scale, Vector3D loc);
 
 };
 

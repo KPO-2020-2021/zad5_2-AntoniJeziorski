@@ -47,6 +47,7 @@ set(SOURCES          # All .cpp files in src/
     src/scene.cpp
     src/hexagonal_prism.cpp
     src/scene_object.cpp
+    src/plateau.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     # tests/main.cpp

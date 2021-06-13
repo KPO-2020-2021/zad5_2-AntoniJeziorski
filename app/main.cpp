@@ -24,19 +24,16 @@
 
 int main() {
 
-    double tab2[3] = {0,0,80},   t[3] = {0,0,-80}, h[3] = {79, 80, 0},  angle, distance;
-    Vector3D tr(tab2),  tr2(t), hor(h);
+    double tab2[3] = {0,0,80},   t[3] = {0,0,-80}, h[3] = {79, 80, 0},  angle, distance, obs[3] = {50,50,50}, l[3] = {50,50,25};
+    Vector3D tr(tab2),  tr2(t), hor(h), o(obs), L(l);
 
-    
     int droneNumber = 1;
-
-    Scene scene;
 
     char option = '0';
 
     PzG::LaczeDoGNUPlota  Link;  // Ta zmienna jest potrzebna do wizualizacji
                                 // rysunku prostokata
-
+    Scene scene(&Link);
    //-------------------------------------------------------
    //  Wspolrzedne wierzcholkow beda zapisywane w pliku "prostokat.dat"
    //  Ponizsze metody powoduja, ze dane z pliku beda wizualizowane
@@ -104,7 +101,7 @@ int main() {
 
     scene.UseDrone(0)->SaveDrone(1);
     scene.UseDrone(1)->SaveDrone(2);
-
+    
     Link.Rysuj(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 
     while(option != 'k') { // Dopoki nie zostanie podane k
@@ -173,9 +170,16 @@ int main() {
                 break;
 
             case 'z':
+
                 Link.DodajNazwePliku("../datasets/path.dat");
                 scene.UseDrone(droneNumber-1)->Recce(droneNumber, Link);
                 Link.UsunNazwePliku("../datasets/path.dat"); 
+                Link.Rysuj();
+                break;
+
+            case 'd':
+
+                scene.AddObstacle(1, o, L);
                 Link.Rysuj();
                 break;
 

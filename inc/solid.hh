@@ -63,4 +63,6 @@ class Solid {
 
         std::string GetFilename();
 
+        void ChangeFilename(std::string name);
+
 };
