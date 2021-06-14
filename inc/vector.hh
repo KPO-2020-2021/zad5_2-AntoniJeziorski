@@ -27,7 +27,17 @@ class Vector {
 
     double size[Size];
 
+    /*!
+     *
+     * \brief Zmienna static przetrzymujaca aktualna ilosc obiektow typu Vector
+     */
+
     static unsigned long long int actualVectorAmount;
+
+    /*!
+     *
+     * \brief Zmienna static przetrzymujaca calkowita ilosc obiektow typu Vector
+     */
 
     static unsigned long long int allVectorAmount;
 
@@ -51,6 +61,11 @@ class Vector {
          */
 
         Vector<Size>(double [Size]); 
+
+        /*!
+         *
+         * \brief Destruktor klasy Vector
+         */
 
         ~Vector<Size>();
        

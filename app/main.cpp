@@ -1,3 +1,12 @@
+
+/*!
+ *
+ * \file main.cpp
+ * \brief Plik glowny programu
+ */
+
+
+
 // Executables must have the following defined if the library contains
 // doctest definitions. For builds with this disabled, e.g. code shipped to
 // users, this can be left out.

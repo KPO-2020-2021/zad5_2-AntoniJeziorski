@@ -55,10 +55,10 @@ set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
     tests/test_matrix3D.cpp
     tests/test_vector3D.cpp
-    # tests/test_solid.cpp
-    # tests/test_cuboid.cpp
-    # tests/test_hexagonal_prism.cpp
-    # tests/test_drone.cpp
+    tests/test_solid.cpp
+    tests/test_cuboid.cpp
+    tests/test_hexagonal_prism.cpp
+    tests/test_drone.cpp
 )
 set(LIBRARY_NAME program)  # Default name for the library built from src/*.cpp (change if you wish)
 

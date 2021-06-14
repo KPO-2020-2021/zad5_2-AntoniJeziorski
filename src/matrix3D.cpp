@@ -2,7 +2,8 @@
 
 /*!
  *
- * \file Plik zawierający definicje funkcji dla Matrix3D
+ * \file matrix3D.cpp
+ * \brief Plik zawierajacy definicje metod klasy Matrix3D
  */
 
 

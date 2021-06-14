@@ -45,6 +45,10 @@ set(SOURCES          # All .cpp files in src/
     src/solid.cpp
     src/scene.cpp
     src/hexagonal_prism.cpp
+    src/scene_object.cpp
+    src/plateau.cpp
+    src/slope.cpp
+    src/mount.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     Vector2D.cpp
